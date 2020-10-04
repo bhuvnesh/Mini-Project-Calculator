@@ -35,9 +35,15 @@
     <br/>
     <br/>
     <label class="switch">
-      <input type="checkbox">
+      <input onclick="toggleDark()"type="checkbox">
       <span class="slider round"></span>
     </label>
   </div>
+  <script>
+    function toggleDark() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
 </body>
 </html>

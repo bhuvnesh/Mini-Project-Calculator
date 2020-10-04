@@ -6,32 +6,55 @@
   <title>Calculator</title>
   <link href="styles.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
-  <script src="script.js"></script>
 </head>
 <body>
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+ <input type="checkbox" id="checkbox" />
+ <div class="slider round"></div>
+</label>
+ <em>Enable Dark Mode!</em>
+</div>
   <div class="calculator-grid">
     <div class="output">
       <div class="previous-operand"></div>
       <div class="current-operand"></div>
     </div>
-    <button class="span-two">AC</button>
-    <button>DEL</button>
-    <button>/</button>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>*</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>-</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>+</button>
-    <button>0</button>
-    <button>.</button>
-    <button class="span-two">=</button>
-  </div>
+    <div class="calculator">
+
+      <!-- display -->
+      <input type="text" class="display" disabled>
+      <!-- keys -->
+      <div class="keys">
+        <!-- 4 rows of keys -->
+        <div class="row">
+          <button value="7">7</button>
+          <button value="8">8</button>
+          <button value="9">9</button>
+          <button value="+" class="operator">+</button>
+        </div>
+        <div class="row">
+          <button value="4">4</button>
+          <button value="5">5</button>
+          <button value="6">6</button>
+          <button value="-" class="operator">-</button>
+        </div>
+        <div class="row">
+          <button value="1">1</button>
+          <button value="2">2</button>
+          <button value="3">3</button>
+          <button value="*" class="operator">*</button>
+        </div>
+        <div class="row">
+          <button value="C" class="operator">C</button>
+          <button value="0">0</button>
+          <button value="/" class="operator">/</button>
+          <button value="=" class="operator">=</button>
+        </div>
+      </div>
+  
+    </div>
 </body>
+<script src="script.js"></script>
+<script src="button.js"></script>
 </html>
